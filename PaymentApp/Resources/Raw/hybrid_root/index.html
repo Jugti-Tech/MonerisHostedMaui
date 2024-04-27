@@ -2,19 +2,19 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title> Outer Frame - Merchant Page</title>
     <script src="_hwv/HybridWebView.js"></script>
     <script src="myapp.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
 </head>
-<body>
-    <div></div>
-    <div id=monerisResponse></div>
-    <iframe id=monerisFrame src=https://esqa.moneris.com/HPPtoken/index.php?id=htVEFOXJ6RUJCOO&css_body=padding:20;&css_textbox=border-width:2px;&enable_exp=1&css_textbox_exp=width:80px;&enable_cvd=1&css_textbox_cvd=width:60px&display_labels=2&enable_exp_
-formatting=1&enable_cc_formatting=1 frameborder='0' ></iframe>
+<body style="margin:0px;padding:0px;">
 
-  
-    <button onClick="doMonerisSubmit()">Add Card</button>
+    <div style="margin:0px 0px 10px 0px;">
+        <iframe id=monerisFrame src=https://esqa.moneris.com/HPPtoken/index.php?id=htVEFOXJ6RUJCOO&css_body=padding-bottom:20px;margin:0px;&css_textbox=border-width:1px;margin-top:10px;padding-top:12px;padding-bottom:10px;padding-left:10px;padding-right:10px;border-radius:10px;&enable_exp=1&css_textbox_exp=width:35%;&enable_cvd=1&css_textbox_cvd=width:60px;margin-bottom:10px;&display_labels=2&enable_exp_formatting=1&enable_cc_formatting=1&css_textbox_pan=font-size:15px;color:#000;font-weight:500;font-family:Inter,sans-serif;width:100%;&css_textbox_exp=font-size:15px;color:#000;font-weight:500;font-family:Inter,sans-serif;&css_textbox_cvd=font-size:18px;color:#000;font-weight:500;font-family:Inter,sans-serif; frameborder='0'></iframe>
+    </div>
 
-    <div>supported cards: mastercard, visa, American express and discover</div>
-</body>
-</html>
+    <div style="text-align:center;">
+        <button onClick="doMonerisSubmit()" style="padding:10px 80px;color:white;background-color:#ef2f50;border-radius:10px;border:none;font-size:15px;font-family:Inter,sans-serif;font-weight:500;">Add Card</button>
+        <p style="color:lightcoral;text-transform:capitalize;font-size:14px;font-family:Inter,sans-serif;">supported cards: mastercard, visa, Amex and discover</p>
+    </di

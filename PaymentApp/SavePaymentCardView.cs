@@ -29,13 +29,13 @@ public class SavePaymentCardView : BaseView
             {
                 new Bold28Label { Text="Add Card"},
 
-                 new BorderedEntry { PlaceholderText = "Name On Card", WidthRequest=250 },
+                 new BorderedEntry { PlaceholderText = "Name On Card", WidthRequest=250 }.Margins(0,0,0,0),
 
 
-                 new BorderedEntry { PlaceholderText = "Street", WidthRequest=250 },
+                 new BorderedEntry { PlaceholderText = "Street", WidthRequest=250 }.Margins(0,10,0,0),
 
 
-                 new BorderedEntry { PlaceholderText = "Post Code", WidthRequest=250 },
+                 new BorderedEntry { PlaceholderText = "Post Code", WidthRequest=250 }.Margins(0,10,0,0),
 
 
              hybridWebView,
